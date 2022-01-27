@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+}
+
+[theme="purple"] {
+  --nav-color: #a479b4;
+  --nav-height: 48px;
+}
+[theme="footer"] {
+  --nav-color: #6a3a5b;
+  --nav-height: 85px;
+}
+
+[class^="nav__icon--arrow"] {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  display: flex;
+  justify-content: center;
+}
+
+[class^="nav__icon--arrow"]:before {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-image: url(../../asset/font/icons/arrow.svg);
+}
+
+.nav {
+  height: var(--nav-height);
+  background-color: var(--nav-color);
+  padding: 0 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+.nav__title {
+  font-size: 14px;
+  color: #e4e7ec;
+  line-height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 300px;
+  text-overflow: ellipsis;
+}
+
+.nav__top {
+  justify-content: flex-end;
+  display: flex;
+  width: 100%;
+}
+
+.nav__top + .nav__body {
+  grid-column: 1/2;
+}
+
+.nav__top ~ .nav__body .nav__title {
+  grid-column: 1/2;
+}
+
+.nav__body {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  block-size: fit-content;
+}
+/* 
+.nav__body:not([first]) {
+  display: none;
+} */
+
+[pozitie="sus"] {
+  top: 0;
+  bottom: initial;
+  margin-bottom: 24px;
+  position: sticky;
+  overflow: hidden;
+}
+
+[pozitie="jos"] {
+  margin-bottom: -20px;
+  bottom: initial;
+  margin-top: 24px;
+  position: sticky;
+}
+
+.butterflies-trail,
+.butterflies-trai-small,
+.butterflies-trail-down {
+  top: -4px;
+  display: flex;
+  position: relative;
+  height: 48px;
+  transition: 350ms;
+}
+
+.butterflies-trail {
+  background-image: url("../../asset/font/images/trail.png");
+  width: 48px;
+}
+
+.butterflies-trail-small {
+  background-image: url("../../asset/font/images/trail.png");
+  width: 38px;
+}
+
+.butterflies-trail-down {
+  background-image: url("../../asset/font/images/trail.png");
+  width: 48px;
+  transform: rotate(90deg);
+}
+
+.image-wrap {
+  position: relative;
+  display: flex;
+  width: auto;
+  background-repeat: repeat;
+  animation-duration: 4s;
+  animation-name: mymove;
+}
+
+@keyframes mymove {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+button {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a483ad;
+  border: 1px solid #ddcfdf;
+  border-radius: 8px;
+  cursor: pointer;
+  right: 16px;
+  position: absolute;
+}
+
+a {
+  text-decoration: none;
+}
+
+.copyright {
+  font-size: 12px;
+  line-height: 18px;
+  color: #e4e7ec;
+}

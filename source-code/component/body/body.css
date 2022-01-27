@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper--text {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  padding: 24px;
+}
+
+h1,
+h2 {
+  color: #42307d;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.top__p,
+p {
+  color: #363f72;
+}
+
+.top__p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+}
