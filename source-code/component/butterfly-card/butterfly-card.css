@@ -1,0 +1,264 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 0 32px;
+}
+
+.card-container-1,
+.card-container-2,
+.card-container-3,
+.card-container-4 {
+  width: 311px;
+  border-radius: 8px;
+  padding: 16px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-container-1 {
+  background-color: #c3cfdd;
+}
+.card-container-2 {
+  background-color: #cacdd8;
+}
+.card-container-3 {
+  background-color: #cdccd7;
+}
+.card-container-4 {
+  background-color: #cecece;
+}
+
+.card-image-wrap {
+  padding: 0 16px;
+}
+
+.card-container-1:hover,
+.card-container-2:hover,
+.card-container-3:hover,
+.card-container-4:hover {
+  height: 550px;
+  width: 321px;
+  border-radius: 8px;
+  padding: 16px 0;
+}
+
+.card-container-1:hover {
+  background-color: #7a8995;
+}
+
+.card-container-2:hover {
+  background-color: #757ea3;
+}
+
+.card-container-3:hover {
+  background-color: #7c717a;
+}
+
+.card-container-4:hover {
+  background-color: #757575;
+}
+
+.card-image-1,
+.card-image-2,
+.card-image-3,
+.card-image-4 {
+  border-radius: 8px 8px 0 0;
+  width: 280px;
+  height: 200px;
+  background-repeat: round;
+}
+
+.card-image-1 {
+  background-image: url("../../asset/font/images/eggs.png");
+}
+
+.card-image-1:hover {
+  background-image: url("../../asset/font/images/catterpillar.png");
+}
+
+.card-image-2 {
+  background-image: url("../../asset/font/images/catterpillar-evolve.png");
+}
+
+.card-image-2:hover {
+  background-image: url("../../asset/font/images/pupa.png");
+}
+
+.card-image-3 {
+  background-image: url("../../asset/font/images/adult-pupa.png");
+}
+
+.card-image-3:hover {
+  background-image: url("../../asset/font/images/butterfly-emerge.png");
+}
+
+.card-image-4 {
+  background-image: url("../../asset/font/images/partners.png");
+}
+
+.card-image-4:hover {
+  background-image: url("../../asset/font/images/lay-eggs.png");
+}
+
+.card-image-1:hover,
+.card-image-2:hover,
+.card-image-3:hover,
+.card-image-4:hover {
+  border-radius: 8px 8px 0 0;
+  background-repeat: round;
+}
+
+.card-container-text {
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+  gap: 6px;
+}
+
+.card-subtitle,
+.card-title {
+  display: flex;
+  color: #475467;
+  text-align: left;
+  font-weight: bold;
+}
+.card-title {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.card-subtitle {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.card-description {
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  text-align: left;
+  color: #667085;
+}
+
+[class^="card-container-"]:hover .card-container-text,
+[class^="card-container-"]:hover .card-header,
+[class^="card-container-"]:hover .card-subtitle,
+[class^="card-container-"]:hover .card-title {
+  color: #e4e7ec;
+}
+
+.card-description:hover {
+  color: #f2f4f7;
+}
+
+/* refactor */
+/* refactor */
+/* refactor */
+.card {
+  width: 311px;
+  border-radius: 8px;
+  padding: 16px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--color);
+  cursor: pointer;
+  transition: 250ms;
+}
+
+.card-image {
+  padding-top: 56.24%;
+  background-image: var(--egg);
+  border-radius: 8px 8px 0 0;
+  width: 290px;
+  height: 200px;
+  background-repeat: round;
+  display: flex;
+  align-self: center;
+  transition: 250ms;
+}
+
+.card:hover .card-image {
+  background-image: var(--cat);
+}
+
+.card-container-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+[class^="card-title-"] {
+  display: flex;
+  color: #475467;
+  text-align: left;
+  font-weight: bold;
+}
+
+[class^="card-description-"] {
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  text-align: left;
+}
+
+.card-description-eggs {
+  color: #667085;
+}
+
+.card-description-catterpillar {
+  display: none;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+}
+
+.card-title-eggs {
+  font-size: 20px;
+  line-height: 30px;
+  position: relative;
+}
+
+.card-title-catterpillar {
+  font-size: 14px;
+  line-height: 20px;
+  position: relative;
+}
+
+.card:hover [class^="card-title-"] {
+  color: #e4e7ec;
+}
+
+.card:hover .card-description-eggs {
+  display: none;
+}
+
+.card:hover .card-description-catterpillar {
+  display: block;
+  color: #f2f4f7;
+}
+
+.card:hover .card-header-top {
+  display: block;
+}
+
+.card:hover .card-header {
+  display: none;
+}
+
+.card:hover {
+  background-color: var(--hover);
+  width: 321px;
+}
+
+.card-header-top {
+  display: none;
+  transition: 350ms;
+}

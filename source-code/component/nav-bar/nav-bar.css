@@ -33,27 +33,22 @@
 .nav {
   height: var(--nav-height);
   background-color: var(--nav-color);
-  padding: 0 16px;
+  padding: 24px;
   display: flex;
   justify-content: center;
-}
-
-.nav {
-  display: flex;
   flex-direction: column;
-  position: fixed;
   bottom: 0;
   right: 0;
   width: 100%;
 }
 
 .nav__title {
+  display: block;
   font-size: 14px;
   color: #e4e7ec;
   line-height: 20px;
   white-space: nowrap;
   overflow: hidden;
-  max-width: 300px;
   text-overflow: ellipsis;
 }
 
@@ -77,11 +72,10 @@
   align-items: center;
   width: fit-content;
   block-size: fit-content;
+  height: var(--nav-height);
+  background-color: var(--nav-color);
 }
-/* 
-.nav__body:not([first]) {
-  display: none;
-} */
+
 
 [pozitie="sus"] {
   top: 0;
@@ -92,10 +86,10 @@
 }
 
 [pozitie="jos"] {
-  margin-bottom: -20px;
-  bottom: initial;
-  margin-top: 24px;
-  position: sticky;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .butterflies-trail,

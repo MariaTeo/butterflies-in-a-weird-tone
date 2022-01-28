@@ -1,7 +1,10 @@
 {
   "name": "my-package",
   "scripts": {
-    "build": "babel src -d lib",
+    "start": "cd source-code && live-server",
     "prebuild": "jest"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
   }
 }
