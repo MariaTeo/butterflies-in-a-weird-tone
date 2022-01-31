@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Butterfly life course</title>
+    <title>Watch it happening</title>
     <link rel="stylesheet" href="../component/body/body.css" />
     <link rel="stylesheet" href="../component/nav-bar/nav-bar.css" />
     <link
       rel="stylesheet"
       href="../component/butterfly-card/butterfly-card.css"
     />
+    <link rel="stylesheet" href="../component/animation/animation.css" />
 
     <link rel="stylesheet" href="../global.css" />
   </head>
@@ -68,32 +69,75 @@
           <h1>Watch the process</h1>
           <div class="overview--description">
             <p>
-              Not many people have the willingness, time or passion to start raising butterflies.
+              Not many people have the willingness, time or passion to start
+              raising butterflies.
             </p>
             <p>
-              Also, there are a few things you must do right if you truly want to help. The butterflies can require different environments and temperatures depending on their species. Therefore, if you trully want to become a butterflies raiser, you should decide on what species you would like to raise and take in account all the little details so that they can survive. 
+              Also, there are a few things you must do right if you truly want
+              to help. The butterflies can require different environments and
+              temperatures depending on their species. Therefore, if you trully
+              want to become a butterflies raiser, you should decide on what
+              species you would like to raise and take in account all the little
+              details so that they can survive.
             </p>
           </div>
           <div class="wrapper__bottom">
-            <h2>For those who are curious to see how the process might look like ...</h2>
+            <h2>
+              For those who are curious to see how the process might look like
+              ...
+            </h2>
             <div class="overview--description">
-              <p>
-                Check out the animation below. 
-              </p>
+              <p>Check out the animation below.</p>
             </div>
+          </div>
+          <div>
+            <div class="stage"></div>
           </div>
         </div>
       </div>
 
-  
+      <div class="animation-wrap">
+        <div
+          class="stage"
+          style="--stage: url('../../asset/font/images/eggs.png')"
+        ></div>
+        <div
+          class="stage"
+          style="--stage: url('../../asset/font/images/catterpillar.png')"
+        ></div>
+        <div
+          class="stage"
+          style="--stage: url('../../asset/font/images/pupa.png')"
+        ></div>
+        <div
+          class="stage"
+          style="
+            --stage: url('../../asset/font/images/catterpillar-evolve.png');
+          "
+        ></div>
+        <div
+          class="stage"
+          style="--stage: url('../../asset/font/images/adult-pupa.png')"
+        ></div>
+        <div
+          class="stage"
+          style="--stage: url('../../asset/font/images/butterfly-emerge.png')"
+        ></div>
+        <div
+          class="stage"
+          style="--stage: url('../../asset/font/partners/eggs.png')"
+        ></div>
+        <div
+          class="stage"
+          style="--stage: url('../../asset/font/images/lay-egss.png')"
+        ></div>
+      </div>
 
       <div class="divider-footer"></div>
 
       <div class="nav" theme="footer" pozitie="jos">
         <div class="nav__body">
-          <a href="/" class="nav__title"
-            >Back to main page ...</a
-          >
+          <a href="/" class="nav__title">Back to main page ...</a>
           <button onclick="location.href='/watch-it-happenig'">
             <div class="nav__icon--arrow" to="/"></div>
           </button>
