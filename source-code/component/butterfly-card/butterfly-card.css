@@ -73,19 +73,16 @@
   display: flex;
   flex-direction: column;
   gap: 0;
-  position: relative;
 }
 
 .card-title-eggs {
   font-size: 20px;
   line-height: 30px;
-  position: relative;
 }
 
 .card-title-catterpillar {
   font-size: 14px;
   line-height: 20px;
-  position: relative;
 }
 
 .card:hover [class^="card-title-"] {

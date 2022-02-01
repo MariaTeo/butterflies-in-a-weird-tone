@@ -29,6 +29,8 @@ body {
 
   .nav {
     padding: 24px;
+    width: 100%;
+    overflow: hidden;
   }
 
   [pozitie="sus"] {
@@ -104,6 +106,18 @@ body {
     width: 740px;
     height: 250px;
   }
+
+  .animation-wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .stage {
+    width: 100%;
+    height: 200%;
+  }
 }
 
 @media screen and (min-width: 1040px) {
@@ -114,6 +128,8 @@ body {
   .nav {
     padding: 24px;
     height: 80px;
+    width: 100%;
+    overflow: hidden;
   }
 
   button {
@@ -195,6 +211,18 @@ body {
     width: 670px;
     height: 300px;
   }
+
+  .animation-wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .stage {
+    width: 100%;
+    height: 250%;
+  }
 }
 
 section {
@@ -206,8 +234,10 @@ section {
 
 .divider {
   height: 32px;
+  width: 100%;
 }
 
 .divider-footer {
-  height: 150px;
+  width: 100%;
+  height: 160px;
 }
