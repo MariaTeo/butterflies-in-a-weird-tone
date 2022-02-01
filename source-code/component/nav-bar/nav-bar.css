@@ -76,13 +76,12 @@
   background-color: var(--nav-color);
 }
 
-
 [pozitie="sus"] {
   top: 0;
-  bottom: initial;
   margin-bottom: 24px;
-  position: sticky;
+  position: fixed;
   overflow: hidden;
+  width: 100%;
 }
 
 [pozitie="jos"] {
