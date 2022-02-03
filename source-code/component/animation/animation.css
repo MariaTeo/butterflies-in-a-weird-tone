@@ -14,6 +14,23 @@
   width: 100%;
   justify-content: center;
   gap: 1%;
+  animation: 1.5s linear 1s fadeIn;
+  animation-name: moveme;
+  animation-play-state: running;
+}
+
+@keyframes mymove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 70%;
+  }
+}
+
+input:checked + .animation-wrap {
+  animation-play-state: paused;
+  background-color: chartreuse;
 }
 
 .stage-wrap {
